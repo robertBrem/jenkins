@@ -19,6 +19,6 @@ RUN curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-com
     apt-get install -y sudo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-COPY run.sh ./run.sh
+ADD run.sh ./run.sh
 RUN chmod +x ./run.sh
 ENTRYPOINT ["/bin/bash","-c","./run.sh"]
