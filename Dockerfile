@@ -1,5 +1,5 @@
 FROM jenkins:2.7.3
-MAINTAINER Oliver Nautsch
+MAINTAINER Robert Brem <brem_robert@hotmail.com>
 USER root
 RUN apt-get update && \
     apt-get install -y apt-transport-https ca-certificates && \
